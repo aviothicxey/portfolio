@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+} */
 body{
     background: #080808; /* Dark background color */
     color:#fff ; /* White text color */
@@ -159,7 +159,8 @@ nav .fas{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 50%;
+    border-radius: 15%;
+    border: 2px solid #e68d07;
     text-align: center;
     transition: background 0.5s , transform 0.5s;
 }  
