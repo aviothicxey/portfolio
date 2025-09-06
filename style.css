@@ -65,7 +65,9 @@ nav ul li a:hover{
 .header-text h1 span{
     color: #dcb610;
 }
-
+nav .fas{
+    display: none;
+}
 /* -- ----------------about---------------- -- */
 #about{
     padding: 80px 0;
@@ -346,7 +348,13 @@ form .btn2{
 
 /* ------------------------------css for responsive------------------------ */
 
+
+
 @media only screen and (max-width: 600px){
+    nav .fas{
+    display: block;
+    font-size: 25px;
+}
     #header{
         background-image: url(images/potr_1.png);
     }
@@ -358,5 +366,51 @@ form .btn2{
         font-size: 30px;
         margin-bottom: 10px;
     }
+nav ul{
+    position: fixed;
+    top: 0;
+   right: -200px;
+    background: #c47703;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    transition: right 0.5s;
+    padding-top: 50px;
+    z-index: 2;
+
+}
+nav ul li{
+    display: block;
+    margin: 25px 0;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.sub-title{
+    font-size: 40px;
+
+}
+.about-col-1,.about-col-2{
+flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom:30px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 30px;
+}
+.cont-left, .cont-right{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
 
 }
